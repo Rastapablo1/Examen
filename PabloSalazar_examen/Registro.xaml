@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PabloSalazar_examen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" Text="Usuario Conectado : " />
+            <Label Text="Registro" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="40"></Label>
+
+            <Label Text="Datos del estudiante" TextColor="Blue" FontSize="18"></Label>
+            <Entry x:Name="txtEstudiante" Keyboard="Text"
+                   Placeholder="Ingrese Nombre del Estudiante"></Entry>
+
+            <Entry x:Name="txtAbono" Keyboard="Numeric"
+                   Placeholder="Ingrese monto inicial"></Entry>
+
+            <Label Text="Saldo a diferir" />
+            <Entry x:Name="txtSaldoPendiente" IsReadOnly="True"></Entry>
+
+            <Label Text="Cuota mensual" />
+            <Entry x:Name="txtMensualidades" IsReadOnly="True" />
+
+            <Label Text="Pago Total" />
+            <Entry x:Name="txtTotal" IsReadOnly="True" />
+
+            <Button x:Name="btnCalcular"
+                    Text="Guardar"
+                    Clicked="btnCalcular_Clicked"></Button>
+            <Button x:Name="btnImprimir"
+                    Text="Imprimir"
+                    Clicked="btnImprimir_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

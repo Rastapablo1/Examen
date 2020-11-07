@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PabloSalazar_examen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" Text="Usuario Conectado : " />
+            <Label Text="Resumen del registro" HorizontalTextAlignment="Center" TextColor="Blue" FontSize="35"></Label>
+
+            <Label Text="Nombre del Estudiante" />
+            <Entry x:Name="txtEstudiante" IsReadOnly="True"></Entry>
+            <Label Text="Valor total a pagar" />
+            <Entry x:Name="txtTotal" IsReadOnly="True"></Entry>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
